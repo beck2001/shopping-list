@@ -1,7 +1,16 @@
 package kz.iitu.shoppinglist
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 @Entity(tableName = "shopping_item")
-data class ShoppingItem(var name: String, var amount: Int) {
+data class ShoppingItem(
+    @ColumnInfo(name = "name")
+    var name: String,
+    @ColumnInfo(name = "amount")
+    var amount: Int
+) {
+    @PrimaryKey(autoGenerate = true)
+    var id: Int? = null
 }
