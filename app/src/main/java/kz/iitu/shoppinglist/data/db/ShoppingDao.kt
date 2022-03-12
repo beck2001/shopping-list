@@ -1,7 +1,8 @@
-package kz.iitu.shoppinglist
+package kz.iitu.shoppinglist.data.db
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import kz.iitu.shoppinglist.data.db.entity.ShoppingItem
 
 @Dao
 interface ShoppingDao {

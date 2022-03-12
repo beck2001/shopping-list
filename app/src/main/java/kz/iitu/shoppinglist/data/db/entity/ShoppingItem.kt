@@ -1,4 +1,4 @@
-package kz.iitu.shoppinglist
+package kz.iitu.shoppinglist.data.db.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
